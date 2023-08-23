@@ -85,7 +85,7 @@
     .historias {
         margin: 50px;
         border: 3px ridge #c153b4;
-        width: 500px;
+        width: 400px;
         padding: 20px;
     }
 
@@ -153,6 +153,93 @@
         row-gap: 1rem; 
     } 
 
+    .contenidoBrujas{
+        background-color: #081c15;
+        color: #9b5de5;
+        justify-content:center;
+        text-align: justify;
+        text-align: center;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+}
+    .imagenB{
+        width: 300px;
+        height: 300px;
+        
+        margin-bottom: 20px;
+    }
+    .textoimagen2{
+        display:flow-root;
+        font-size: smaller;
+    }
+
+    .historias{
+        color: #132a13;
+        background-color: #a3b18a;
+        margin: 20px;
+        border: 3px ridge #e0aaff;
+        width: 500px;
+        padding:20px 20px 20px 20px;
+        grid-area: historias;
+    
+    
+        animation-name: cambiar-color;
+        animation-duration: 10s;
+        animation-delay: 1s; /*desde  que carga la pagina*/
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;/*cuantas veces se repite*/
+        animation-fill-mode: both;/*hasta el  ultimo estado del movimiento*/
+    }
+    
+    @keyframes cambiar-color{
+        0%{
+            background-color: pink;
+        }
+        25%{
+            background-color: aquamarine;
+        }
+        
+        50%{
+            background-color: #c415c4;
+        }
+        100%{
+            background-color: pink ;
+        }
+    }
+
+    .historias2{
+        color: #132a13;
+        background-color: #ad4f08;
+        margin: 20px;
+        border: 3px ridge #3c096c;
+        width: 500px;
+        padding:20px 20px 20px 20px;
+    
+        animation-name: cambiar-color;
+        animation-duration: 10s;
+        animation-delay: 1s; /*desde  que carga la pagina*/
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;/*cuantas veces se repite*/
+        animation-fill-mode: both;/*hasta el  ultimo estado del movimiento*/
+    }
+    
+    @keyframes cambiar-color{
+        0%{
+            background-color: pink;
+        }
+        25%{
+            background-color: rgb(8, 82, 57);
+        }
+        
+        50%{
+            background-color: #6e266e;
+        }
+        100%{
+            background-color: rgb(211, 97, 116) ;
+        }
+    }
 }
 
 
