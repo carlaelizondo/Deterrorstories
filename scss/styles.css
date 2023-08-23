@@ -190,13 +190,14 @@
   grid-area: uno;
   padding-left: 20px;
   padding-right: 30px;
+  margin-top: 10px;
   font-size: 20px;
   text-align: justify;
 }
 
 .dos {
   grid-area: dos;
-  padding-left: 0px;
+  padding-left: 10px;
   padding-right: 20px;
   font-size: 20px;
   text-align: justify;
@@ -322,6 +323,7 @@
 .imagen2 {
   text-align: center;
   margin-left: 50px;
+  grid-area: Imagen2;
 }
 
 .imagenB {
@@ -358,8 +360,7 @@
   grid-area: Bbrujas2;
   padding-left: 20px;
   height: 550px;
-  width: 660px;
-  align-self: center;
+  width: 620px;
 }
 
 .dem {
@@ -417,22 +418,22 @@
     text-align: justify;
     color: rgb(255, 255, 255);
   }
-  .imagen2 {
+  .dem {
+    align-self: center;
+    align-content: center;
+    padding-right: 10px;
     height: 420px;
     width: 460px;
   }
-  .Bbrujas {
-    grid-area: Bbrujas;
+  .imagen2 {
     height: 420px;
     width: 460px;
-    padding-left: 20px;
-    padding-right: 100px;
   }
   .uno {
     grid-area: uno;
     padding-left: 20px;
     padding-right: 30px;
-    padding-top: 0px;
+    padding-top: 10px;
     font-size: 15px;
     text-align: justify;
   }
@@ -450,14 +451,16 @@
     font-size: 15px;
     text-align: justify;
   }
-  .Bbrujas2 {
-    grid-area: Bbrujas2;
-    padding-left: 20px;
-    padding-right: 100px;
-    height: 450px;
+  .Bbrujas {
+    grid-area: Bbrujas;
+    height: 420px;
     width: 460px;
-    align-self: center;
-    display: flex;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .Bbrujas2 {
+    display: none;
   }
   .link {
     display: list-item;
@@ -466,7 +469,6 @@
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: 1fr;
     grid-template-areas: "uno" "dos" "tres" "Bbrujas" "Bbrujas2";
-    row-gap: 1rem;
   }
   .contenidoBrujas {
     background-color: #081c15;

@@ -62,25 +62,24 @@
         color: rgb(255, 255, 255);
     }
  
-
+    .dem{
+        align-self: center;
+        align-content: center;
+        padding-right: 10px;
+        height: 420px;
+        width: 460px;
+    }
     .imagen2{
         height: 420px;
         width: 460px;
     }
 
-    .Bbrujas{
-        grid-area: Bbrujas;
-        height: 420px;
-        width: 460px;
-        padding-left: 20px;
-        padding-right: 100px;
-
-    }
+    
     .uno{
         grid-area: uno;
         padding-left: 20px;
         padding-right: 30px;
-        padding-top: 0px;
+        padding-top: 10px;
         font-size: 15px;
         text-align: justify;
     }
@@ -98,16 +97,18 @@
         font-size: 15px;
         text-align: justify;
     }
-    .Bbrujas2{
-        grid-area: Bbrujas2;
-        padding-left: 20px;
-        padding-right: 100px;
-        height: 450px;
+    .Bbrujas {
+        grid-area: Bbrujas; // Cambia el grid-area para alinear las imágenes
+        height: 420px;
         width: 460px;
-        align-self: center;
-        display: flex;
-    }
-
+        margin: 0 auto; // Centrar horizontalmente
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      
+      .Bbrujas2 {
+        display: none; // Ocultar la imagen Bbrujas original
+      }
     .link {
         display: list-item;
     }
@@ -120,7 +121,7 @@
             "tres"
             "Bbrujas"
             "Bbrujas2";
-        row-gap: 1rem; 
+        
     } 
 
     .contenidoBrujas{
