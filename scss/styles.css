@@ -47,6 +47,18 @@
   padding-left: 80px;
 }
 
+.textoimagendem {
+  display: flex;
+  padding: 20px;
+  font-size: 20px;
+  text-align: justify;
+  color: red;
+}
+
+.link {
+  display: inline-block;
+}
+
 .contenido {
   background-color: black;
 }
