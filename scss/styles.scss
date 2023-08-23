@@ -14,21 +14,21 @@
 
 
 // Estilos para resoluciones mayores o iguales a 800px
-@media (min-width: 800px) {
+@media (max-width: 1424px) {
     .titulo2 {
         color: #da627d;
     }
 
     .grillita {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 1rem 3rem;
         grid-template-areas:
-            "regresar categoria"
-            "historias b";
+            "regresar" 
+            "categoria"
+            "a" 
+            "b";
         align-content: space-evenly;
-        justify-items: stretch;
-        align-items: stretch;
     }
 
     .textoimagendem {
@@ -46,58 +46,26 @@
         margin-bottom: 20px;
         align-self: auto;
     }
-}
-
-// Estilos para resoluciones mayores o iguales a 700px
-@media (min-width: 700px) {
-    .titulo {
-        color: #b5179e;
-    }
-
-    .texto1 {
-        margin: 20px;
-        text-align: justify;
-        font-size: 30px;
-        border-radius: 2rem;
-        display: flex;
-    }
-
-    .imagen2 {
-        border-radius: 2rem;
-        margin: 10px;
-    }
 
     .link {
         display: inline-block;
-        font-size: small;
-        background-color: #3c096c;
-        width: 100px;
-        margin: 10px;
-        padding: 20px 20px 15px 10px;
-        border: 3px double rgb(255, 174, 201);
-        position: relative;
-        text-align: center;
-        color: #ffcad4;
-        text-decoration: none;
-        font-family: 'Cinzel Decorative', cursive;
     }
-
-    .historias {
-        margin: 50px;
-        border: 3px ridge #c153b4;
-        width: 400px;
-        padding: 20px;
-    }
-
 }
 
-@media (max-width: 699px) {
+
+@media (max-width: 800px) {
     .textoimagendem {
         display: block; /* Cambiar a bloque en resoluciones pequeñas */
         padding: 20px;
         font-size: 16px; /* Ajustar el tamaño de fuente */
         text-align: justify;
         color: rgb(255, 255, 255);
+    }
+ 
+
+    .imagen2{
+        height: 420px;
+        width: 460px;
     }
 
     .Bbrujas{
@@ -140,7 +108,9 @@
         display: flex;
     }
 
- 
+    .link {
+        display: list-item;
+    }
         .grilla3 {
         grid-template-rows: repeat(5, 1fr); 
         grid-template-columns: 1fr; 
@@ -175,71 +145,50 @@
         font-size: smaller;
     }
 
-    .historias{
-        color: #132a13;
-        background-color: #a3b18a;
-        margin: 20px;
-        border: 3px ridge #e0aaff;
-        width: 500px;
-        padding:20px 20px 20px 20px;
-        grid-area: historias;
-    
-    
-        animation-name: cambiar-color;
-        animation-duration: 10s;
-        animation-delay: 1s; /*desde  que carga la pagina*/
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;/*cuantas veces se repite*/
-        animation-fill-mode: both;/*hasta el  ultimo estado del movimiento*/
-    }
-    
-    @keyframes cambiar-color{
-        0%{
-            background-color: pink;
-        }
-        25%{
-            background-color: aquamarine;
-        }
-        
-        50%{
-            background-color: #c415c4;
-        }
-        100%{
-            background-color: pink ;
-        }
+    .titulo {
+        color: #b5179e;
     }
 
-    .historias2{
-        color: #132a13;
-        background-color: #ad4f08;
+    .texto1 {
         margin: 20px;
-        border: 3px ridge #3c096c;
-        width: 500px;
-        padding:20px 20px 20px 20px;
-    
-        animation-name: cambiar-color;
-        animation-duration: 10s;
-        animation-delay: 1s; /*desde  que carga la pagina*/
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;/*cuantas veces se repite*/
-        animation-fill-mode: both;/*hasta el  ultimo estado del movimiento*/
+        text-align: justify;
+        font-size: 16px;
+        border-radius: 2rem;
+        display: list-item;
     }
-    
-    @keyframes cambiar-color{
-        0%{
-            background-color: pink;
-        }
-        25%{
-            background-color: rgb(8, 82, 57);
-        }
+
+    .imagen2 {
+        border-radius: 2rem;
+        margin: 10px;
+    }
+
+    .grillita {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem 3rem;
+        grid-template-areas:
+            "regresar" 
+            "categoria"
+            "a b";
+        align-content: space-evenly;
         
-        50%{
-            background-color: #6e266e;
-        }
-        100%{
-            background-color: rgb(211, 97, 116) ;
-        }
     }
+
+    .historias{
+        margin: 30px;
+        border: 2px ridge #c153b4;
+        width: 300px;
+        padding:10px 10px 10px 10px;
+    
+        }
+
+     .historias2{
+            margin: 30px;
+            border: 2px ridge #c153b4;
+            width: 300px;
+            padding:10px 10px 10px 10px;
+        
+            }
 }
 
 

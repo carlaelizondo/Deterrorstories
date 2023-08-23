@@ -30,7 +30,7 @@
     text-align: justify;
     font-size: 30px;
     border-radius: 2rem;
-    
+    display: flex;
 }
 
 .til{
@@ -91,14 +91,13 @@
     width: 500px;
     padding: 20px;
 
-    grid-area: historias;
-
     animation-name: cambiar-color;
     animation-duration: 10s;
     animation-delay: 1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
+
 }
 
 @keyframes cambiar-color {
@@ -115,9 +114,14 @@
         background-color: pink;
     }
 }
+
 .b{
     grid-area: b;
 }
+.a{
+    grid-area: a;
+}
+
 
 .contenidoH1{
     background-color: $color-435f62;
@@ -172,6 +176,19 @@
     "uno  Bbrujas"
     "Bbrujas2  dos"
     "tres  tres";
+}
+
+.grillita{
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 3rem;
+    grid-template-areas: 
+    "regresar categoria"
+    "a          b";
+    align-content: space-evenly;
+    justify-items: stretch;
+    align-items: stretch;
 }
 
 /*-----------------Demonios-------------------*/

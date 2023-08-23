@@ -77,6 +77,7 @@
   text-align: justify;
   font-size: 30px;
   border-radius: 2rem;
+  display: flex;
 }
 
 .til {
@@ -133,7 +134,6 @@
   border: 3px ridge #e0aaff;
   width: 500px;
   padding: 20px;
-  grid-area: historias;
   animation-name: cambiar-color;
   animation-duration: 10s;
   animation-delay: 1s;
@@ -158,6 +158,10 @@
 }
 .b {
   grid-area: b;
+}
+
+.a {
+  grid-area: a;
 }
 
 .contenidoH1 {
@@ -211,6 +215,17 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "uno  Bbrujas" "Bbrujas2  dos" "tres  tres";
+}
+
+.grillita {
+  display: grid;
+  grid-template-columns: repeat 2, 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 3rem;
+  grid-template-areas: "regresar categoria" "a          b";
+  align-content: space-evenly;
+  justify-items: stretch;
+  align-items: stretch;
 }
 
 /*-----------------Demonios-------------------*/
@@ -280,7 +295,6 @@
 }
 
 .link {
-  display: list-item;
   font-size: small;
   background-color: #3c096c;
   width: 100px;
@@ -366,18 +380,16 @@
   width: 300px;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 1424px) {
   .titulo2 {
     color: #da627d;
   }
   .grillita {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem 3rem;
-    grid-template-areas: "regresar categoria" "historias b";
+    grid-template-areas: "regresar" "categoria" "a" "b";
     align-content: space-evenly;
-    justify-items: stretch;
-    align-items: stretch;
   }
   .textoimagendem {
     display: flex;
@@ -393,50 +405,21 @@
     margin-bottom: 20px;
     align-self: auto;
   }
-}
-@media (min-width: 700px) {
-  .titulo {
-    color: #b5179e;
-  }
-  .texto1 {
-    margin: 20px;
-    text-align: justify;
-    font-size: 30px;
-    border-radius: 2rem;
-    display: flex;
-  }
-  .imagen2 {
-    border-radius: 2rem;
-    margin: 10px;
-  }
   .link {
     display: inline-block;
-    font-size: small;
-    background-color: #3c096c;
-    width: 100px;
-    margin: 10px;
-    padding: 20px 20px 15px 10px;
-    border: 3px double rgb(255, 174, 201);
-    position: relative;
-    text-align: center;
-    color: #ffcad4;
-    text-decoration: none;
-    font-family: "Cinzel Decorative", cursive;
-  }
-  .historias {
-    margin: 50px;
-    border: 3px ridge #c153b4;
-    width: 400px;
-    padding: 20px;
   }
 }
-@media (max-width: 699px) {
+@media (max-width: 800px) {
   .textoimagendem {
     display: block; /* Cambiar a bloque en resoluciones pequeñas */
     padding: 20px;
     font-size: 16px; /* Ajustar el tamaño de fuente */
     text-align: justify;
     color: rgb(255, 255, 255);
+  }
+  .imagen2 {
+    height: 420px;
+    width: 460px;
   }
   .Bbrujas {
     grid-area: Bbrujas;
@@ -476,6 +459,9 @@
     align-self: center;
     display: flex;
   }
+  .link {
+    display: list-item;
+  }
   .grilla3 {
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: 1fr;
@@ -502,61 +488,37 @@
     display: flow-root;
     font-size: smaller;
   }
-  .historias {
-    color: #132a13;
-    background-color: #a3b18a;
-    margin: 20px;
-    border: 3px ridge #e0aaff;
-    width: 500px;
-    padding: 20px 20px 20px 20px;
-    grid-area: historias;
-    animation-name: cambiar-color;
-    animation-duration: 10s;
-    animation-delay: 1s; /*desde  que carga la pagina*/
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite; /*cuantas veces se repite*/
-    animation-fill-mode: both; /*hasta el  ultimo estado del movimiento*/
+  .titulo {
+    color: #b5179e;
   }
-  @keyframes cambiar-color {
-    0% {
-      background-color: pink;
-    }
-    25% {
-      background-color: aquamarine;
-    }
-    50% {
-      background-color: #c415c4;
-    }
-    100% {
-      background-color: pink;
-    }
+  .texto1 {
+    margin: 20px;
+    text-align: justify;
+    font-size: 16px;
+    border-radius: 2rem;
+    display: list-item;
+  }
+  .imagen2 {
+    border-radius: 2rem;
+    margin: 10px;
+  }
+  .grillita {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem 3rem;
+    grid-template-areas: "regresar" "categoria" "a b";
+    align-content: space-evenly;
+  }
+  .historias {
+    margin: 30px;
+    border: 2px ridge #c153b4;
+    width: 300px;
+    padding: 10px 10px 10px 10px;
   }
   .historias2 {
-    color: #132a13;
-    background-color: #ad4f08;
-    margin: 20px;
-    border: 3px ridge #3c096c;
-    width: 500px;
-    padding: 20px 20px 20px 20px;
-    animation-name: cambiar-color;
-    animation-duration: 10s;
-    animation-delay: 1s; /*desde  que carga la pagina*/
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite; /*cuantas veces se repite*/
-    animation-fill-mode: both; /*hasta el  ultimo estado del movimiento*/
-  }
-  @keyframes cambiar-color {
-    0% {
-      background-color: pink;
-    }
-    25% {
-      background-color: rgb(8, 82, 57);
-    }
-    50% {
-      background-color: #6e266e;
-    }
-    100% {
-      background-color: rgb(211, 97, 116);
-    }
+    margin: 30px;
+    border: 2px ridge #c153b4;
+    width: 300px;
+    padding: 10px 10px 10px 10px;
   }
 }/*# sourceMappingURL=styles.css.map */
