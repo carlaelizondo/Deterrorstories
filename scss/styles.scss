@@ -13,14 +13,42 @@
 
 
 
-// Media query para resoluciones mayores o iguales a 800px
+// Estilos para resoluciones mayores o iguales a 800px
 @media (min-width: 800px) {
     .titulo2 {
         color: #da627d;
     }
+
+    .grillita {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem 3rem;
+        grid-template-areas:
+            "regresar categoria"
+            "historias b";
+        align-content: space-evenly;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .textoimagendem {
+        display: flex;
+        padding: 20px;
+        font-size: 20px;
+        text-align: justify;
+        color: red;
+    }
+
+    .dem {
+        width: 700px;
+        height: 700px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        align-self: auto;
+    }
 }
 
-// Media query para resoluciones mayores o iguales a 700px
+// Estilos para resoluciones mayores o iguales a 700px
 @media (min-width: 700px) {
     .titulo {
         color: #b5179e;
@@ -53,5 +81,78 @@
         text-decoration: none;
         font-family: 'Cinzel Decorative', cursive;
     }
+
+    .historias {
+        margin: 50px;
+        border: 3px ridge #c153b4;
+        width: 500px;
+        padding: 20px;
+    }
+
 }
+
+@media (max-width: 699px) {
+    .textoimagendem {
+        display: block; /* Cambiar a bloque en resoluciones pequeñas */
+        padding: 20px;
+        font-size: 16px; /* Ajustar el tamaño de fuente */
+        text-align: justify;
+        color: rgb(255, 255, 255);
+    }
+
+    .Bbrujas{
+        grid-area: Bbrujas;
+        height: 420px;
+        width: 460px;
+        padding-left: 20px;
+        padding-right: 100px;
+
+    }
+    .uno{
+        grid-area: uno;
+        padding-left: 20px;
+        padding-right: 30px;
+        padding-top: 0px;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .dos{
+        grid-area: dos;
+        padding-left: 20px;
+        padding-right: 30px;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .tres{
+        grid-area: tres;
+        padding-left: 20px;
+        padding-right: 30px;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .Bbrujas2{
+        grid-area: Bbrujas2;
+        padding-left: 20px;
+        padding-right: 100px;
+        height: 450px;
+        width: 460px;
+        align-self: center;
+        display: flex;
+    }
+
+ 
+        .grilla3 {
+        grid-template-rows: repeat(5, 1fr); 
+        grid-template-columns: 1fr; 
+        grid-template-areas:
+            "uno"
+            "dos"
+            "tres"
+            "Bbrujas"
+            "Bbrujas2";
+        row-gap: 1rem; 
+    } 
+
+}
+
 

@@ -9,3 +9,29 @@
     color: darkmagenta;
     background-color: mistyrose;
 }
+  
+  *::-moz-selection {
+    color: darkmagenta;
+    background-color: mistyrose;
+  }
+
+  .regresar>*{
+    color: #9e0059;
+    font-size: 20px;
+    grid-area: regresar;
+  }
+.regresar2>*{
+    color: #e0aaff;
+    font-size: 20px;
+   text-align: center;
+   padding-bottom: 50px;
+   padding-left: 80px;
+}
+
+.regresar3>*{
+  color:#9b5de5;
+  font-size: 20px;
+ text-align: center;
+ padding-bottom: 50px;
+ padding-left: 80px;
+}

@@ -3,3 +3,52 @@
     text-align: center;
     margin-left: 50px;
 }
+
+.imagenB{
+    width: 700px;
+    height: 700px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.textoimagen2{
+    display:flex;
+    font-size: smaller;
+}
+
+.imagen3{
+    margin-right: 10px;
+    position: static;
+}
+.bosque{
+    width: fit-content;
+    height: 200px;
+}
+.Bbrujas{
+    grid-area: Bbrujas;
+    height: 500px;
+    width: 685px;
+    margin-top: 20px;
+}
+.Bbrujas2{
+    grid-area: Bbrujas2;
+    padding-left: 20px;
+    height: 550px;
+    width: 660px;
+    align-self: center;
+}
+
+.dem{
+    align-self: center;
+    align-content: center;
+    padding-right: 10px;
+}
+.imagenh2{
+    height: 200px;
+    padding: 10px;
+    width:250px;
+}
+.imagenh5{
+    height: 300px;
+    padding: 10px;
+    width:300px;
+}

@@ -40,4 +40,200 @@
 
 .categoria{
     font-family: $font-family-1;
+    grid-area: categoria;
+    margin-left: 250px;
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    color: $color-9b5de5;
+}
+
+.opciones{
+    display: flex;
+    flex-direction: row;/*row, column, row-reverse, column-reverse*/
+    flex-wrap: wrap; /* tambien se puede escribir como flex-flow: row wrap;*/
+    gap: 1rem; 
+    justify-content: flex-end;
+}
+
+
+/*-----------------BRUJAS-------------------*/
+
+.brujas{
+    color: $color-dc2f02;
+    font-size: 100px;
+    font-family: 'Castoro Titling', cursive;
+    text-align:end;
+    background-color: $color-132a13;
+}
+
+.contenidoBrujas{
+    background-color: $color-081c15;
+    color: $color-9b5de5;
+    justify-content: flex-start;
+    text-align: justify;
+    text-align: center;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+
+}
+
+.historias {
+    color: $color-132a13;
+    background-color: $color-a3b18a;
+    margin: 50px;
+    border: 3px ridge #e0aaff;
+    width: 500px;
+    padding: 20px;
+
+    grid-area: historias;
+
+    animation-name: cambiar-color;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes cambiar-color {
+    0% {
+        background-color: pink;
+    }
+    25% {
+        background-color: aquamarine;
+    }
+    50% {
+        background-color: #c415c4;
+    }
+    100% {
+        background-color: pink;
+    }
+}
+.b{
+    grid-area: b;
+}
+
+.contenidoH1{
+    background-color: $color-435f62;
+}
+
+.titulobrujas {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        position: absolute;
+        color: aliceblue;
+        font-family: 'Cinzel Decorative', cursive;
+    }
+}
+
+.categoria {
+    font-family: $font-family-1;
+    grid-area: categoria;
+    margin-left: 250px;
+}
+
+.uno{
+    grid-area: uno;
+    padding-left: 20px;
+    padding-right: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+.dos{
+    grid-area: dos;
+    padding-left: 0px;
+    padding-right: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+.tres{
+    grid-area: tres;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.grilla3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr) ;
+    grid-template-areas:
+    "uno  Bbrujas"
+    "Bbrujas2  dos"
+    "tres  tres";
+}
+
+/*-----------------Demonios-------------------*/
+.conten{
+    background-color: $color-black;
+}
+.tituloD{
+    color:$color-red;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.historias2{
+    color: $color-132a13;
+    background-color: $color-ad4f08;
+    margin: 50px;
+    border: 3px ridge #3c096c;
+    width: 500px;
+    padding:20px 20px 20px 20px;
+
+    animation-name: cambiar-color;
+    animation-duration: 10s;
+    animation-delay: 1s; /*desde  que carga la pagina*/
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;/*cuantas veces se repite*/
+    animation-fill-mode: both;/*hasta el  ultimo estado del movimiento*/
+}
+
+@keyframes cambiar-color{
+    0%{
+        background-color: pink;
+    }
+    25%{
+        background-color: rgb(8, 82, 57);
+    }
+    
+    50%{
+        background-color: #6e266e;
+    }
+    100%{
+        background-color: rgb(211, 97, 116) ;
+    }
+}
+/*-----------------Historia 2-------------------*/
+.titulodemonios{
+    display: flex;
+    h1{
+        color: $color-540b0e;
+        font-family: 'Cinzel Decorative', cursive;
+        font-size: 50px;
+    }
+}
+.contenidoH2{
+    background-color: $color-3c096c;
+}
+.textd{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: larger;
+    padding: 10px 10px;
+    text-align: justify;
+    color:aliceblue;
+    display:flex;
 }

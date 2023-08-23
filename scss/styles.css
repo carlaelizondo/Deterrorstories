@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Loved+by+the+King&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
@@ -17,6 +18,33 @@
 *::selection {
   color: darkmagenta;
   background-color: mistyrose;
+}
+
+*::-moz-selection {
+  color: darkmagenta;
+  background-color: mistyrose;
+}
+
+.regresar > * {
+  color: #9e0059;
+  font-size: 20px;
+  grid-area: regresar;
+}
+
+.regresar2 > * {
+  color: #e0aaff;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+.regresar3 > * {
+  color: #9b5de5;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-left: 80px;
 }
 
 .contenido {
@@ -58,6 +86,197 @@
 
 .categoria {
   font-family: "Julius Sans One", sans-serif;
+  grid-area: categoria;
+  margin-left: 250px;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  color: #9b5de5;
+}
+
+.opciones {
+  display: flex;
+  flex-direction: row; /*row, column, row-reverse, column-reverse*/
+  flex-wrap: wrap; /* tambien se puede escribir como flex-flow: row wrap;*/
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+/*-----------------BRUJAS-------------------*/
+.brujas {
+  color: #dc2f02;
+  font-size: 100px;
+  font-family: "Castoro Titling", cursive;
+  text-align: end;
+  background-color: #132a13;
+}
+
+.contenidoBrujas {
+  background-color: #081c15;
+  color: #9b5de5;
+  justify-content: flex-start;
+  text-align: justify;
+  text-align: center;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  font-size: 30px;
+}
+
+.historias {
+  color: #132a13;
+  background-color: #a3b18a;
+  margin: 50px;
+  border: 3px ridge #e0aaff;
+  width: 500px;
+  padding: 20px;
+  grid-area: historias;
+  animation-name: cambiar-color;
+  animation-duration: 10s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes cambiar-color {
+  0% {
+    background-color: pink;
+  }
+  25% {
+    background-color: aquamarine;
+  }
+  50% {
+    background-color: #c415c4;
+  }
+  100% {
+    background-color: pink;
+  }
+}
+.b {
+  grid-area: b;
+}
+
+.contenidoH1 {
+  background-color: #435f62;
+}
+
+.titulobrujas {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulobrujas h1 {
+  position: absolute;
+  color: aliceblue;
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.categoria {
+  font-family: "Julius Sans One", sans-serif;
+  grid-area: categoria;
+  margin-left: 250px;
+}
+
+.uno {
+  grid-area: uno;
+  padding-left: 20px;
+  padding-right: 30px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.dos {
+  grid-area: dos;
+  padding-left: 0px;
+  padding-right: 20px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.tres {
+  grid-area: tres;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.grilla3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "uno  Bbrujas" "Bbrujas2  dos" "tres  tres";
+}
+
+/*-----------------Demonios-------------------*/
+.conten {
+  background-color: black;
+}
+
+.tituloD {
+  color: red;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Cinzel Decorative", cursive;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.historias2 {
+  color: #132a13;
+  background-color: #ad4f08;
+  margin: 50px;
+  border: 3px ridge #3c096c;
+  width: 500px;
+  padding: 20px 20px 20px 20px;
+  animation-name: cambiar-color;
+  animation-duration: 10s;
+  animation-delay: 1s; /*desde  que carga la pagina*/
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; /*cuantas veces se repite*/
+  animation-fill-mode: both; /*hasta el  ultimo estado del movimiento*/
+}
+
+@keyframes cambiar-color {
+  0% {
+    background-color: pink;
+  }
+  25% {
+    background-color: rgb(8, 82, 57);
+  }
+  50% {
+    background-color: #6e266e;
+  }
+  100% {
+    background-color: rgb(211, 97, 116);
+  }
+}
+/*-----------------Historia 2-------------------*/
+.titulodemonios {
+  display: flex;
+}
+.titulodemonios h1 {
+  color: #540b0e;
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 50px;
+}
+
+.contenidoH2 {
+  background-color: #3c096c;
+}
+
+.textd {
+  font-family: "Cormorant Garamond", serif;
+  font-size: larger;
+  padding: 10px 10px;
+  text-align: justify;
+  color: aliceblue;
+  display: flex;
 }
 
 .link {
@@ -74,6 +293,10 @@
   text-decoration: none;
   font-family: "Cinzel Decorative", cursive;
 }
+.link:hover {
+  background-color: seagreen;
+  transform: translate(10px, -30px);
+}
 
 .link1 {
   background-color: #66023c;
@@ -87,9 +310,88 @@
   margin-left: 50px;
 }
 
+.imagenB {
+  width: 700px;
+  height: 700px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.textoimagen2 {
+  display: flex;
+  font-size: smaller;
+}
+
+.imagen3 {
+  margin-right: 10px;
+  position: static;
+}
+
+.bosque {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 200px;
+}
+
+.Bbrujas {
+  grid-area: Bbrujas;
+  height: 500px;
+  width: 685px;
+  margin-top: 20px;
+}
+
+.Bbrujas2 {
+  grid-area: Bbrujas2;
+  padding-left: 20px;
+  height: 550px;
+  width: 660px;
+  align-self: center;
+}
+
+.dem {
+  align-self: center;
+  align-content: center;
+  padding-right: 10px;
+}
+
+.imagenh2 {
+  height: 200px;
+  padding: 10px;
+  width: 250px;
+}
+
+.imagenh5 {
+  height: 300px;
+  padding: 10px;
+  width: 300px;
+}
+
 @media (min-width: 800px) {
   .titulo2 {
     color: #da627d;
+  }
+  .grillita {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 3rem;
+    grid-template-areas: "regresar categoria" "historias b";
+    align-content: space-evenly;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  .textoimagendem {
+    display: flex;
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+    color: red;
+  }
+  .dem {
+    width: 700px;
+    height: 700px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    align-self: auto;
   }
 }
 @media (min-width: 700px) {
@@ -120,5 +422,64 @@
     color: #ffcad4;
     text-decoration: none;
     font-family: "Cinzel Decorative", cursive;
+  }
+  .historias {
+    margin: 50px;
+    border: 3px ridge #c153b4;
+    width: 500px;
+    padding: 20px;
+  }
+}
+@media (max-width: 699px) {
+  .textoimagendem {
+    display: block; /* Cambiar a bloque en resoluciones pequeñas */
+    padding: 20px;
+    font-size: 16px; /* Ajustar el tamaño de fuente */
+    text-align: justify;
+    color: rgb(255, 255, 255);
+  }
+  .Bbrujas {
+    grid-area: Bbrujas;
+    height: 420px;
+    width: 460px;
+    padding-left: 20px;
+    padding-right: 100px;
+  }
+  .uno {
+    grid-area: uno;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 0px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .dos {
+    grid-area: dos;
+    padding-left: 20px;
+    padding-right: 30px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .tres {
+    grid-area: tres;
+    padding-left: 20px;
+    padding-right: 30px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .Bbrujas2 {
+    grid-area: Bbrujas2;
+    padding-left: 20px;
+    padding-right: 100px;
+    height: 450px;
+    width: 460px;
+    align-self: center;
+    display: flex;
+  }
+  .grilla3 {
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: "uno" "dos" "tres" "Bbrujas" "Bbrujas2";
+    row-gap: 1rem;
   }
 }/*# sourceMappingURL=styles.css.map */
