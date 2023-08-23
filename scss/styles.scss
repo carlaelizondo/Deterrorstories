@@ -47,17 +47,15 @@
         align-self: auto;
     }
 
-    .link {
-        display: inline-block;
-    }
+    
 }
 
 
 @media (max-width: 800px) {
     .textoimagendem {
-        display: block; /* Cambiar a bloque en resoluciones pequeñas */
+        display: block; 
         padding: 20px;
-        font-size: 16px; /* Ajustar el tamaño de fuente */
+        font-size: 16px; 
         text-align: justify;
         color: rgb(255, 255, 255);
     }
