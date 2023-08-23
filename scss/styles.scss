@@ -1,0 +1,57 @@
+@import "./partials/variables";
+@import "./partials/reset";
+@import "./partials/contenido";
+@import "./partials/links";
+@import "./partials/imagenes";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Loved+by+the+King&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Cinzel+Decorative&display=swap');
+
+
+
+
+// Media query para resoluciones mayores o iguales a 800px
+@media (min-width: 800px) {
+    .titulo2 {
+        color: #da627d;
+    }
+}
+
+// Media query para resoluciones mayores o iguales a 700px
+@media (min-width: 700px) {
+    .titulo {
+        color: #b5179e;
+    }
+
+    .texto1 {
+        margin: 20px;
+        text-align: justify;
+        font-size: 30px;
+        border-radius: 2rem;
+        display: flex;
+    }
+
+    .imagen2 {
+        border-radius: 2rem;
+        margin: 10px;
+    }
+
+    .link {
+        display: inline-block;
+        font-size: small;
+        background-color: #3c096c;
+        width: 100px;
+        margin: 10px;
+        padding: 20px 20px 15px 10px;
+        border: 3px double rgb(255, 174, 201);
+        position: relative;
+        text-align: center;
+        color: #ffcad4;
+        text-decoration: none;
+        font-family: 'Cinzel Decorative', cursive;
+    }
+}
+

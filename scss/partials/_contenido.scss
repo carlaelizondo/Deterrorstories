@@ -1,0 +1,43 @@
+
+
+.contenido {
+    background-color: $color-black;
+}
+
+.contenido1 {
+    background-color: $color-black;
+    color: $color-ffcad4;
+    font-size: larger;
+}
+
+.titulo {
+    color: $color-ff9f1c;
+    text-align: center;
+    font-family: $font-family-5;
+    margin-top: 10px;
+}
+
+.titulo2 {
+    color: $color-red;
+    font-family: $font-family-5;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 0;
+}
+
+.texto1{
+    margin: 20px;
+    text-align: justify;
+    font-size: 30px;
+    border-radius: 2rem;
+    
+}
+
+.til{
+    color: $color-b5179e;
+    font-family: $font-family-5;
+}
+
+.categoria{
+    font-family: $font-family-1;
+}

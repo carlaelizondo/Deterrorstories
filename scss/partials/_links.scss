@@ -1,0 +1,22 @@
+.link {
+    display: list-item;
+    font-size: small;
+    background-color: $color-3c096c;
+    width: 100px;
+    margin: 10px;
+    padding: 20px 20px 15px 10px;
+    border: 3px double rgb(255, 174, 201);
+    position: relative;
+    text-align: center;
+    color: #ffcad4;
+    text-decoration: none;
+    font-family: $font-family-5;
+}
+
+.link1 {
+    background-color: #66023c;
+
+    &:hover {
+        background-color: #ff9f1c;
+    }
+}

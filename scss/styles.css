@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Loved+by+the+King&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Cinzel+Decorative&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*::-moz-selection {
+  color: darkmagenta;
+  background-color: mistyrose;
+}
+
+*::selection {
+  color: darkmagenta;
+  background-color: mistyrose;
+}
+
+.contenido {
+  background-color: black;
+}
+
+.contenido1 {
+  background-color: black;
+  color: #ffcad4;
+  font-size: larger;
+}
+
+.titulo {
+  color: #ff9f1c;
+  text-align: center;
+  font-family: "Cinzel Decorative", cursive;
+  margin-top: 10px;
+}
+
+.titulo2 {
+  color: red;
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 70px;
+  text-align: center;
+  padding-top: 0;
+}
+
+.texto1 {
+  margin: 20px;
+  text-align: justify;
+  font-size: 30px;
+  border-radius: 2rem;
+}
+
+.til {
+  color: #b5179e;
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.categoria {
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.link {
+  display: list-item;
+  font-size: small;
+  background-color: #3c096c;
+  width: 100px;
+  margin: 10px;
+  padding: 20px 20px 15px 10px;
+  border: 3px double rgb(255, 174, 201);
+  position: relative;
+  text-align: center;
+  color: #ffcad4;
+  text-decoration: none;
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.link1 {
+  background-color: #66023c;
+}
+.link1:hover {
+  background-color: #ff9f1c;
+}
+
+.imagen2 {
+  text-align: center;
+  margin-left: 50px;
+}
+
+@media (min-width: 800px) {
+  .titulo2 {
+    color: #da627d;
+  }
+}
+@media (min-width: 700px) {
+  .titulo {
+    color: #b5179e;
+  }
+  .texto1 {
+    margin: 20px;
+    text-align: justify;
+    font-size: 30px;
+    border-radius: 2rem;
+    display: flex;
+  }
+  .imagen2 {
+    border-radius: 2rem;
+    margin: 10px;
+  }
+  .link {
+    display: inline-block;
+    font-size: small;
+    background-color: #3c096c;
+    width: 100px;
+    margin: 10px;
+    padding: 20px 20px 15px 10px;
+    border: 3px double rgb(255, 174, 201);
+    position: relative;
+    text-align: center;
+    color: #ffcad4;
+    text-decoration: none;
+    font-family: "Cinzel Decorative", cursive;
+  }
+}/*# sourceMappingURL=styles.css.map */
