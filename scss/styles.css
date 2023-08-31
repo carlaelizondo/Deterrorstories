@@ -58,7 +58,7 @@
   display: inline-block;
 }
 
-.contenido {
+.paginaI {
   background-color: black;
 }
 
@@ -95,11 +95,25 @@
   color: #b5179e;
   font-family: "Cinzel Decorative", cursive;
 }
+.til bruj {
+  background-color: #081c15;
+  color: #9e0059;
+  font-family: "Cinzel Decorative", cursive;
+}
+.til Demonios {
+  background-color: black;
+  color: #9e0059;
+  font-family: "Cinzel Decorative", cursive;
+}
 
 .categoria {
   font-family: "Julius Sans One", sans-serif;
   grid-area: categoria;
   margin-left: 250px;
+}
+
+footer {
+  background-color: black;
 }
 
 .menu {
@@ -118,6 +132,14 @@
 }
 
 /*-----------------BRUJAS-------------------*/
+.paginaB {
+  background-color: #081c15;
+}
+
+.form {
+  background-color: #081c15;
+}
+
 .brujas {
   color: #dc2f02;
   font-size: 100px;
@@ -245,6 +267,10 @@
   background-color: black;
 }
 
+.paginaD {
+  background-color: black;
+}
+
 .tituloD {
   color: red;
   font-size: 50px;
@@ -283,6 +309,10 @@
     background-color: rgb(211, 97, 116);
   }
 }
+.formularioD {
+  background-color: black;
+}
+
 /*-----------------Historia 2-------------------*/
 .titulodemonios {
   display: flex;

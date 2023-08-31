@@ -12,7 +12,7 @@
     display: inline-block;
 }
 
-.contenido {
+.paginaI{
     background-color: $color-black;
 }
 
@@ -48,12 +48,28 @@
 .til{
     color: $color-b5179e;
     font-family: $font-family-5;
+
+    bruj{
+        background-color: $color-081c15;
+        color: $color-9e0059;
+        font-family: $font-family-5;
+    }
+
+        
+    Demonios{
+        background-color: $color-black;
+        color: $color-9e0059;
+        font-family: $font-family-5;
+        }
 }
 
 .categoria{
     font-family: $font-family-1;
     grid-area: categoria;
     margin-left: 250px;
+}
+footer {
+    background-color: black;
 }
 
 .menu{
@@ -73,7 +89,12 @@
 
 
 /*-----------------BRUJAS-------------------*/
-
+.paginaB{
+    background-color: $color-081c15;
+}
+.form{
+    background-color:  $color-081c15;
+}
 .brujas{
     color: $color-dc2f02;
     font-size: 100px;
@@ -81,7 +102,6 @@
     text-align:end;
     background-color: $color-132a13;
 }
-
 .contenidoBrujas{
     background-color: $color-081c15;
     color: $color-9b5de5;
@@ -208,6 +228,9 @@
 .conten{
     background-color: $color-black;
 }
+.paginaD{
+    background-color: $color-black;
+}
 .tituloD{
     color:$color-red;
     font-size: 50px;
@@ -247,6 +270,11 @@
         background-color: rgb(211, 97, 116) ;
     }
 }
+
+.formularioD{
+    background-color: $color-black;
+}
+
 /*-----------------Historia 2-------------------*/
 .titulodemonios{
     display: flex;
