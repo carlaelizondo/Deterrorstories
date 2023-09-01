@@ -11,10 +11,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Cinzel+Decorative&display=swap');
 
 
-
-
-// Estilos para resoluciones mayores o iguales a 800px
-@media (max-width: 1424px) {
+@media (max-width: 1426px) {
     .titulo2 {
         color: #da627d;
     }
@@ -45,13 +42,11 @@
         margin-left: 40px;
         margin-bottom: 20px;
         align-self: auto;
-    }
-
-    
+    }  
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .textoimagendem {
         display: block; 
         padding: 20px;
@@ -71,79 +66,19 @@
         height: 420px;
         width: 460px;
     }
-
-    
-    .uno{
-        grid-area: uno;
-        padding-left: 20px;
-        padding-right: 30px;
-        padding-top: 10px;
-        font-size: 15px;
-        text-align: justify;
-    }
-    .dos{
-        grid-area: dos;
-        padding-left: 20px;
-        padding-right: 30px;
-        font-size: 15px;
-        text-align: justify;
-    }
-    .tres{
-        grid-area: tres;
-        padding-left: 20px;
-        padding-right: 30px;
-        font-size: 15px;
-        text-align: justify;
-    }
-    .Bbrujas {
-        grid-area: Bbrujas; // Cambia el grid-area para alinear las imágenes
-        height: 420px;
-        width: 460px;
-        margin: 0 auto; // Centrar horizontalmente
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-      
-      .Bbrujas2 {
-        display: none; // Ocultar la imagen Bbrujas original
-      }
-    .link {
-        display: list-item;
-    }
-        .grilla3 {
-        grid-template-rows: repeat(5, 1fr); 
-        grid-template-columns: 1fr; 
-        grid-template-areas:
-            "uno"
-            "dos"
-            "tres"
-            "Bbrujas"
-            "Bbrujas2";
-        
-    } 
-
-    .contenidoBrujas{
-        background-color: #081c15;
-        color: #9b5de5;
-        justify-content:center;
-        text-align: justify;
-        text-align: center;
-        padding-left: 20px;
-        padding-bottom: 20px;
-        padding-right: 20px;
-        font-size: 15px;
-}
+   
     .imagenB{
         width: 300px;
         height: 300px;
-        
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        margin: 0 auto;
     }
     .textoimagen2{
         display:flow-root;
-        font-size: smaller;
+        font-size: 17px;
+        align-self: center;
+      
     }
-
     .titulo {
         color: #b5179e;
     }
@@ -187,6 +122,45 @@
             width: 300px;
             padding:10px 10px 10px 10px;
         
+            }
+    .grilla3 {
+                grid-template-rows: repeat(5, 1fr); 
+                grid-template-columns: 1fr; 
+                grid-template-areas:
+                    "uno"
+                    "dos"
+                    "tres"
+                    "Bbrujas"
+                    "Bbrujas2";
+                    .uno{
+                        grid-area: uno;
+                        padding-left: 20px;
+                        padding-right: 30px;
+                        padding-top: 10px;
+                        font-size: 18px;
+                        text-align: justify;
+                    }
+                    .dos{
+                        grid-area: dos;
+                        padding-left: 20px;
+                        padding-right: 30px;
+                        font-size: 18px;
+                        text-align: justify;
+                    }
+                    .tres{
+                        grid-area: tres;
+                        padding-left: 20px;
+                        padding-right: 30px;
+                        font-size: 18px;
+                        text-align: justify;
+                    }
+                    .Bbrujas2 {
+                        display: none;
+                      }
+            } 
+              
+            .link {
+                display: list-item;
             }
 }
 
